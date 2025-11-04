@@ -51,6 +51,8 @@ jobs:
         run: npm run lint
       - name: Build
         run: npm run build
+      - name: Add .nojekyll
+        run: echo "" > dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
