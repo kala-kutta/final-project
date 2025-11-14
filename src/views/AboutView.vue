@@ -1,15 +1,12 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is an about page demonstrating the usage of Tailwind in a scoped style tag</h1>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+@import "tailwindcss";
+.about {
+  @apply min-h-screen flex items-center
 }
 </style>
