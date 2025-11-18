@@ -13,6 +13,8 @@ export default defineConfigWithVueTs(
     rules: {
       "no-var": "error",
       "prefer-const": "error",
+      "indent": ["error", 2],
+      "no-tabs": "error",
       "semi": ["error", "always"],
       "quotes": ["error", "double"],
       "no-trailing-spaces": "error",
@@ -20,6 +22,8 @@ export default defineConfigWithVueTs(
       "camelcase": "off",
       "@typescript-eslint/naming-convention": "off",
       "vue/multi-word-component-names": "off",
+      "sort-imports": "off",
+      "vue/no-mutating-props": "off"
     }
   }
 );

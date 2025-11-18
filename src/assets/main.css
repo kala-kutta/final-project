@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Jakarta Sans'; 
+    src: url('./jakarta.ttf') format('truetype');
+    font-weight: 500;
+    font-size: smaller;
+}
+
+html, body {
+    font-family: 'Jakarta Sans', sans-serif;
+    letter-spacing: -0.005em;
+}
+
+.error-anim {
+  animation: error-shake 300ms cubic-bezier(.36,.07,.19,.97);
+}
+
+@keyframes error-shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-2px); }
+  40%  { transform: translateX(2px); }
+  60%  { transform: translateX(-1.5px); }
+  80%  { transform: translateX(1.5px); }
+  100% { transform: translateX(0); }
+}
